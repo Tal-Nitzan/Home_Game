@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class OpenDoor : MonoBehaviour
 {
 
+    // public float animationDuration;
     private Animator animator;
     // Start is called before the first frame update
     void Start()
@@ -12,8 +14,17 @@ public class OpenDoor : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    void OnTriggerEnter(Collider other)
+    // public void TrigDoor()
+    // {
+    //     Debug.Log("openning the door");
+    //     // this.animator.SetBool("open", true);
+    //     this.animator.SetTrigger("OpenDoor");
+    // }
+
+
+    public void OnTriggerEnter(Collider other)
     {
+        Debug.Log("openning the door");
         animator.SetBool("open", true);
     }
 
