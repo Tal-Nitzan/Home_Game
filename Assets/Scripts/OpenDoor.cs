@@ -24,7 +24,6 @@ public class OpenDoor : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        Debug.Log("openning the door");
         animator.SetBool("open", true);
     }
 
