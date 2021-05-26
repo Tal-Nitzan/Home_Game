@@ -13,6 +13,7 @@ public class NPCMotion : MonoBehaviour {
     public NPCMotion npcRef;
     bool wait_flag = true;
     private float time = float.MaxValue;
+    
 
 
     void Start () {
