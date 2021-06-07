@@ -14,14 +14,6 @@ public class OpenDoor : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    // public void TrigDoor()
-    // {
-    //     Debug.Log("openning the door");
-    //     // this.animator.SetBool("open", true);
-    //     this.animator.SetTrigger("OpenDoor");
-    // }
-
-
     public void OnTriggerEnter(Collider other)
     {
         animator.SetBool("open", true);
